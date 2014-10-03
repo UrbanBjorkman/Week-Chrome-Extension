@@ -1,4 +1,4 @@
-Week-Chrome-Extension
+Week a simple Chrome Extension
 =====================
 
 Displays current week number as an extension icon in Chrome toolbar
