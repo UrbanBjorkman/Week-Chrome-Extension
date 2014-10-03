@@ -7,4 +7,5 @@ Where to get it
 ---------------
 
 Get it on Google Play Store
+
 http://goo.gl/pFxJN4
