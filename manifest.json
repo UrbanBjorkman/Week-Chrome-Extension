@@ -1,24 +1,26 @@
 ﻿{
     "background": {
-    "scripts": ["jquery-2.1.1.min.js", "background.js"],
-    "persistent": false
+        "scripts": [ "jquery-2.1.1.min.js", "background.js" ],
+        "persistent": false
     },
-   "content_scripts": [ {
-      "js": [ "jquery-2.1.1.min.js", "vecka.js"],
-      "matches": [ "http://*/*", "https://*/*" ]
-   } ],
-   "description": "Week badge",
-   "manifest_version": 2,
-   "name": "Week",
-   "short_name": "Week",
-   "version": "0.1",
-   "icons": { "128": "images/logo128.png" },
-   "browser_action": {
-          "default_icon": {                    // optional
-            "19": "images/icon19.png",           // optional
-            "38": "images/icon38.png"            // optional
-          },
-          "default_title": "Week",      // optional; shown in tooltip
-          "default_popup": "week.html"        // optional
+    "content_scripts": [
+        {
+            "js": [ "jquery-2.1.1.min.js", "week.js" ],
+            "matches": [ "http://*/*", "https://*/*" ]
         }
+    ],
+    "description": "Week displays an icon with the current week number in the chrome toolbar",
+    "manifest_version": 2,
+    "name": "Week",
+    "short_name": "Week",
+    "version": "0.3",
+    "icons": { "128": "images/logo128.png" },
+    "browser_action": {
+        "default_icon": { 
+            "19": "images/icon19.png", 
+            "38": "images/icon38.png" 
+        },
+        "default_title": "Week", 
+        "default_popup": "week.html" 
+    }
 }

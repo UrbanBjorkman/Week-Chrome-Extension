@@ -7,7 +7,17 @@
 
 
     $(function () {
-        var weekNumber = (new Date()).getWeek().toString();
-        chrome.browserAction.setBadgeText({ text: weekNumber });
+        setBadge();
+        setInterval(function () {
+            setBadge();
+        }, 5000)
+
+        
     });
 })(jQuery);
+
+
+function setBadge() {
+    var weekNumber = (new Date()).getWeek().toString();
+    chrome.browserAction.setBadgeText({ text: weekNumber });
+}
